@@ -1,0 +1,17 @@
+{
+  "name": "pa4-parte-3-public-next",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PA4 - Parte 3: Modulo publico en Next.js con catalogo de cursos",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001"
+  },
+  "dependencies": {
+    "next": "^16.2.9",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

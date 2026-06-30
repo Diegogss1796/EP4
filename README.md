@@ -82,3 +82,48 @@ npm run preview
 | (Integrante 2) | LoginPage, ProtectedRoute |
 | (Integrante 3) | CoursesPage, CourseDetailPage |
 | (Integrante 4) | SessionPage, StudentZonePage |
+
+## Parte 3 — Módulo público en Next.js
+
+**Responsable:**  
+Andrés Trujillo
+
+**Descripción:**  
+Se implementó un módulo público separado en Next.js dentro de la carpeta `public-next`. Este módulo permite que visitantes no autenticados vean una página de inicio, un catálogo público de cursos y el detalle de cada curso mediante rutas dinámicas.
+
+**Rutas implementadas:**
+- `/`
+- `/catalogo`
+- `/catalogo/[id]`
+
+**Rutas dinámicas generadas:**
+- `/catalogo/desarrollo-web`
+- `/catalogo/base-datos`
+- `/catalogo/marketing-digital`
+- `/catalogo/gestion-proyectos`
+
+**Estrategia técnica:**
+- Next.js con App Router
+- Proyecto separado para no afectar el portal React + Vite
+- Datos locales en `public-next/data/cursos.js`
+- Ruta dinámica con `generateStaticParams`
+- Generación estática SSG para los detalles de cursos
+- Build de producción verificado correctamente
+
+**Comandos para ejecutar:**
+```bash
+cd public-next
+npm install
+npm run dev
+```
+
+**URL local:**  
+http://localhost:3001
+
+**Comando para verificar producción:**
+```bash
+npm run build
+```
+
+**Evidencia de build:**  
+El build terminó correctamente y Next.js mostró que `/catalogo/[id]` fue prerenderizado como SSG usando `generateStaticParams`.
