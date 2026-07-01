@@ -1,12 +1,14 @@
-# PA4 — Parte 1: Autenticación y Manejo de Sesión con JWT
+# Gestión de Cursos e Inscripciones – Experiencia Integrada
+**Programación Web II – PA4**
 
 ## Integrantes
 | Nombre | Código |
 |--------|--------|
-| (Integrante 1) | — |
-| (Integrante 2) | — |
-| (Integrante 3) | — |
-| (Integrante 4) | — |
+| (Diego Gallardo) | — |
+| (Diego Salva) | — |
+| (Andrés Trujillo) | — |
+| (Gabriela Fumiko Furukawa Oki) | — |
+| (Misha Reuven) | — |
 
 ## Descripción
 Portal del Estudiante ISIL — Parte 1 del PA4.  
@@ -73,57 +75,13 @@ npm run preview
 | `/zona-estudiante` | Protegida (rol Estudiante) | RBAC — solo estudiantes |
 
 ## Video de sustentación
-[Enlace al video en YouTube](#) ← reemplazar con el link real
+[Enlace al video en YouTube](https://www.youtube.com/watch?v=qoe_zu-kBlE)
 
 ## Distribución de aportes
 | Integrante | Aporte |
 |------------|--------|
-| (Integrante 1) | AuthContext, useSession |
-| (Integrante 2) | LoginPage, ProtectedRoute |
-| (Integrante 3) | CoursesPage, CourseDetailPage |
-| (Integrante 4) | SessionPage, StudentZonePage |
-
-## Parte 3 — Módulo público en Next.js
-
-**Responsable:**  
-Andrés Trujillo
-
-**Descripción:**  
-Se implementó un módulo público separado en Next.js dentro de la carpeta `public-next`. Este módulo permite que visitantes no autenticados vean una página de inicio, un catálogo público de cursos y el detalle de cada curso mediante rutas dinámicas.
-
-**Rutas implementadas:**
-- `/`
-- `/catalogo`
-- `/catalogo/[id]`
-
-**Rutas dinámicas generadas:**
-- `/catalogo/desarrollo-web`
-- `/catalogo/base-datos`
-- `/catalogo/marketing-digital`
-- `/catalogo/gestion-proyectos`
-
-**Estrategia técnica:**
-- Next.js con App Router
-- Proyecto separado para no afectar el portal React + Vite
-- Datos locales en `public-next/data/cursos.js`
-- Ruta dinámica con `generateStaticParams`
-- Generación estática SSG para los detalles de cursos
-- Build de producción verificado correctamente
-
-**Comandos para ejecutar:**
-```bash
-cd public-next
-npm install
-npm run dev
-```
-
-**URL local:**  
-http://localhost:3001
-
-**Comando para verificar producción:**
-```bash
-npm run build
-```
-
-**Evidencia de build:**  
-El build terminó correctamente y Next.js mostró que `/catalogo/[id]` fue prerenderizado como SSG usando `generateStaticParams`.
+| (Diego Gallardo) | AuthContext, useSession |
+| (Diego Salva) | LoginPage, ProtectedRoute |
+| (Andrés Trujillo) | CoursesPage, CourseDetailPage |
+| (Gabriela Fumiko Furukawa Oki) | SessionPage, StudentZonePage |
+| (Misha Reuven) | Control de variables de entorno, Documentación del repositorio (README) |
