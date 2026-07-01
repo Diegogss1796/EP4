@@ -1,11 +1,12 @@
 /**
- * components/Navbar.jsx
  * Barra de navegación principal con info de sesión y botón de logout.
  */
 
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import styles from './Navbar.module.css'
+
+const APP_NAME = import.meta.env.VITE_APP_NAME || 'Portal ISIL'
 
 export default function Navbar() {
   const { user, logout, isAuthenticated } = useAuth()
@@ -26,7 +27,7 @@ export default function Navbar() {
       <div className={styles.inner}>
         <button className={styles.brand} onClick={() => navigate('/dashboard')}>
           <span className={styles.brandIcon} aria-hidden="true">🎓</span>
-          Portal ISIL
+          {APP_NAME}
         </button>
 
         <div className={styles.right}>
@@ -37,7 +38,7 @@ export default function Navbar() {
           </div>
 
           <button className="btn btn-sm btn-ghost" onClick={() => navigate('/sesion')}>
-            🔐 Sesión
+            Sesión
           </button>
 
           <button className="btn btn-sm btn-danger" onClick={handleLogout}>
