@@ -75,7 +75,7 @@ npm run preview
 | `/zona-estudiante` | Protegida (rol Estudiante) | RBAC — solo estudiantes |
 
 ## Video de sustentación
-[Enlace al video en YouTube](#) ← reemplazar con el link real
+[Enlace al video en YouTube](https://www.youtube.com/watch?v=qoe_zu-kBlE)
 
 ## Distribución de aportes
 | Integrante | Aporte |
