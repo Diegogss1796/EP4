@@ -1,12 +1,14 @@
-# PA4 — Parte 1: Autenticación y Manejo de Sesión con JWT
+# Gestión de Cursos e Inscripciones – Experiencia Integrada
+**Programación Web II – PA4**
 
 ## Integrantes
 | Nombre | Código |
 |--------|--------|
-| (Integrante 1) | — |
-| (Integrante 2) | — |
-| (Integrante 3) | — |
-| (Integrante 4) | — |
+| (Diego Gallardo) | — |
+| (Diego Salva) | — |
+| (Andrés Trujillo) | — |
+| (Gabriela Fumiko Furukawa Oki) | — |
+| (Misha Reuven) | — |
 
 ## Descripción
 Portal del Estudiante ISIL — Parte 1 del PA4.  
@@ -78,7 +80,8 @@ npm run preview
 ## Distribución de aportes
 | Integrante | Aporte |
 |------------|--------|
-| (Integrante 1) | AuthContext, useSession |
-| (Integrante 2) | LoginPage, ProtectedRoute |
-| (Integrante 3) | CoursesPage, CourseDetailPage |
-| (Integrante 4) | SessionPage, StudentZonePage |
+| (Diego Gallardo) | AuthContext, useSession |
+| (Diego Salva) | LoginPage, ProtectedRoute |
+| (Andrés Trujillo) | CoursesPage, CourseDetailPage |
+| (Gabriela Fumiko Furukawa Oki) | SessionPage, StudentZonePage |
+| (Misha Reuven) | Control de variables de entorno, Documentación del repositorio (README) |
